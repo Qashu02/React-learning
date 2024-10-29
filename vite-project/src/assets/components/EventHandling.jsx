@@ -9,10 +9,15 @@ export const Eventhandling= ()=>{
             {name:"ali",age:36},
             {name:"anas",age:17},
         ]);
-        console.log(user)
+        const userCount=user.length
+      
+
+        const average= (user.reduce((accumulate, curEl)=>accumulate+curEl.age,0)/userCount)
+        {console.log(average)}
 
       return<>
       
+
 
         <h2>new user list</h2>
         <ul>
